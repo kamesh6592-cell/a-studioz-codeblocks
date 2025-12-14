@@ -228,18 +228,23 @@ if __name__ == "__main__":
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold mb-4">JavaScript/TypeScript</h2>
-            <CodeBlock code={jsExample} language="javascript" />
-          </section>
-
-          <section>
-            <h2 className="text-2xl font-semibold mb-4">Python</h2>
-            <CodeBlock code={pythonExample} language="python" />
-          </section>
-
-          <section>
-            <h2 className="text-2xl font-semibold mb-4">HTML</h2>
-            <CodeBlock code={htmlExample} language="html" />
+            <h2 className="text-2xl font-semibold mb-6">Code Examples</h2>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              <div>
+                <h3 className="text-lg font-medium mb-3">JavaScript/TypeScript</h3>
+                <CodeBlock code={jsExample} language="javascript" />
+              </div>
+              
+              <div>
+                <h3 className="text-lg font-medium mb-3">Python</h3>
+                <CodeBlock code={pythonExample} language="python" />
+              </div>
+              
+              <div className="lg:col-span-2">
+                <h3 className="text-lg font-medium mb-3">HTML</h3>
+                <CodeBlock code={htmlExample} language="html" />
+              </div>
+            </div>
           </section>
 
           <section className="text-center mt-12 p-8 bg-card border border-border rounded-lg">
